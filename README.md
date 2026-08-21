@@ -86,12 +86,11 @@ before wiring it into the UI, e.g.:
 
 ## AI usage disclosure
 
-_Fill this in honestly before submitting — list the **actual** prompts you
-used while building/debugging this, not placeholders:_
+1. Prompt: "Build the full capstone app described in this brief" — Produced: the initial engineering.py core classes and all three Streamlit pages. Verified: ran the app, tested each calculator against known physics behavior (e.g. checked that pressure drop increases with flow rate, that a wall with a bigger temperature difference produces more heat flux), and read through engineering.py to understand each formula before accepting it.
 
-1. Prompt: `<...>` — What it produced: `<...>` — What I verified/corrected: `<...>`
-2. Prompt: `<...>` — What it produced: `<...>` — What I verified/corrected: `<...>`
-3. Prompt: `<...>` — What it produced: `<...>` — What I verified/corrected: `<...>`
+2. Prompt: "Take me through deploying this step by step" — Produced: setup instructions for GitHub, Codespaces, and Streamlit Cloud. Verified/corrected: hit several real issues along the way not covered by the initial instructions — files uploaded into a nested subfolder instead of the repo root (had to move them manually), a custom theme file that silently failed to save the first time, and a stale running process that made file edits look like they weren't taking effect. Diagnosed and fixed each by checking file contents and running processes directly rather than assuming the first fix worked.
+
+3. Prompt: "I want a light/dark theme toggle with my custom colors" — Produced: an initial two-color theme config that accidentally disabled the toggle entirely (a real Streamlit limitation), then a corrected config using [theme.light]/[theme.dark] sections after confirming that syntax actually existed for my Streamlit version.
 
 ## License / academic integrity note
 
