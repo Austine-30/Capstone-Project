@@ -1,0 +1,19 @@
+
+
+
+cat > .streamlit/config.toml << 'EOF'
+[theme]
+base = "light"
+primaryColor = "#f5a623"
+font = "sans serif"
+
+[theme.light]
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#eef2f7"
+textColor = "#0b2545"
+
+[theme.dark]
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#1c2530"
+textColor = "#fafafa"
+EOF

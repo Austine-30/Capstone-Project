@@ -2,7 +2,6 @@
 Home.py
 =======
 Landing page for the Fluid Flow & Heat Transfer Engineering Suite.
-
 Run with:  streamlit run Home.py
 """
 
@@ -14,7 +13,15 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("🛠️ Fluid Flow & Heat Transfer Engineering Suite")
+st.markdown(
+    """
+<div style="background-color:#0b1c33; padding:2rem 2.2rem 2.4rem 2.2rem; border-radius:10px; margin-bottom:1.6rem;">
+<h1 style="color:white; font-size:2.4rem; font-weight:800; margin:0 0 0.6rem 0; line-height:1.2;">🛠️ Fluid Flow &amp; Heat Transfer Engineering Suite</h1>
+<p style="color:#a9b7c9; font-size:1rem; margin:0;">A complete, deployed engineering toolkit built for PE 262's capstone project.</p>
+</div>
+""",
+    unsafe_allow_html=True,
+)
 
 st.markdown(
     """

@@ -19,7 +19,16 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from engineering import FlatWall, CoolingBody  # noqa: E402
 
 st.set_page_config(page_title="Heat Transfer Calculator", page_icon="🌡️", layout="wide")
-st.title("🌡️ Heat Transfer Calculator")
+
+st.markdown(
+    """
+<div style="background-color:#0b1c33; padding:1.8rem 2.2rem 2.1rem 2.2rem; border-radius:10px; margin-bottom:1.6rem;">
+<h1 style="color:white; font-size:2.1rem; font-weight:800; margin:0 0 0.6rem 0; line-height:1.2;">🌡️ Heat Transfer Calculator</h1>
+<p style="color:#a9b7c9; font-size:0.95rem; margin:0;">Steady-state conduction through a flat wall, plus Newton's Law of Cooling with an interactive temperature-vs-time curve.</p>
+</div>
+""",
+    unsafe_allow_html=True,
+)
 
 tab1, tab2 = st.tabs(["🧱 Conduction (Fourier's Law)", "❄️ Newton's Law of Cooling"])
 

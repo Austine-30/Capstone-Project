@@ -18,10 +18,15 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(page_title="Rock & Fluid Dashboard", page_icon="📊", layout="wide")
-st.title("📊 Rock & Fluid Data Dashboard")
-st.caption(
-    "Upload a CSV of rock or fluid sample data (e.g. porosity, permeability, "
-    "lithology) to explore it. A sample dataset is provided if you don't have one."
+
+st.markdown(
+    """
+<div style="background-color:#0b1c33; padding:1.8rem 2.2rem 2.1rem 2.2rem; border-radius:10px; margin-bottom:1.6rem;">
+<h1 style="color:white; font-size:2.1rem; font-weight:800; margin:0 0 0.6rem 0; line-height:1.2;">📊 Rock &amp; Fluid Data Dashboard</h1>
+<p style="color:#a9b7c9; font-size:0.95rem; margin:0;">Upload a CSV of rock or fluid sample data to explore it. A sample dataset is provided if you don't have one.</p>
+</div>
+""",
+    unsafe_allow_html=True,
 )
 
 
