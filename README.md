@@ -12,7 +12,7 @@ object-oriented core (`engineering.py`):
 
 ## Live app
 
-**URL:** _add your Streamlit Community Cloud URL here after deploying_
+https://capstone-project-kaduweq3jtby6y8us6o4rc.streamlit.app/
 
 ## Project structure
 
